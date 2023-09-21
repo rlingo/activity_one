@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* Reset some default browser styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a light background color and text color for the body */
+body {
+    background-color: #a89e91;
+    color: #eeeae4;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #453014;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Style the sections */
+section {
+    padding: 30px;
+    background-color: #453014c9;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the project items in the portfolio section */
+.project {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #453014;
+    color: #fff;
+}
+
+/* Add subtle animations */
+.project img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    section {
+        margin: 20px;
+        padding: 20px;
+    }
+}
